@@ -52,9 +52,3 @@ Contributions to this project are welcome. If you encounter any issues or have s
 ---
 
 Developed by Lorenzo Tijerina - 2023
-
-
-
-
-
-
