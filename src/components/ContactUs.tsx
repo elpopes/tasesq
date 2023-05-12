@@ -1,5 +1,6 @@
 import React from 'react';
 import Map from './Map';
+import EmailForm from './EmailForm';
 
 const ContactUs: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const ContactUs: React.FC = () => {
         <li>Email: tasesq@msn.com</li>
       </ul>
       {<Map />}
-      {/* Insert Email Form component (using SendGrid) here */}
+      {<EmailForm />}
     </div>
   );
 };
