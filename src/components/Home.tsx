@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   return (
     <div className="home">
         <HeroBanner title="Welcome to Our Law Firm" subtitle="Providing top-quality legal services for over 40 years" />
-      <h1>Welcome to Our Law Firm</h1>
+      <h1>Welcome to TASESQ</h1>
       <p>
         We are a San Antonio-based federal law firm with over 40 years of
         experience. Our seasoned team of legal professionals is dedicated to
