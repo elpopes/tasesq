@@ -1,4 +1,5 @@
 import React from 'react';
+import Map from './Map';
 
 const ContactUs: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const ContactUs: React.FC = () => {
         <li>Phone: 210-231-0112</li>
         <li>Email: tasesq@msn.com</li>
       </ul>
-      {/* Insert Google Map component here */}
+      {<Map />}
       {/* Insert Email Form component (using SendGrid) here */}
     </div>
   );
