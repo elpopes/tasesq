@@ -1,0 +1,57 @@
+$font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-headings: 'Georgia', serif;
+
+// Base font styles
+body, button, input, select, textarea {
+  font-family: $font-family-base;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: rgb(250, 250, 250);
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-headings;
+  font-weight: 700;
+  color: #333;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.75em;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.875em;
+}
+
+// Links
+a {
+  color: #007BFF;
+  text-decoration: none;
+  
+  &:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+}
