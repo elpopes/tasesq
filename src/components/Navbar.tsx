@@ -1,28 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const Navbar: React.FC = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isOpen, setIsOpen] = useState(false);
+  const node = useRef<HTMLUListElement>(null); // Create a ref for the ul
 
+  const handleClick = (e: any) => {
+    // Check if the click was outside the menu
+    if (node.current && !node.current.contains(e.target)) {
+      // If it was outside the menu, close the menu
+      setIsOpen(false);
+    }
+  };
 
-    const handleResize = () => {
-        setIsMobile(window.innerWidth < 768);
+  useEffect(() => {
+    // Add the event listener when the component mounts
+    document.addEventListener("mousedown", handleClick);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      document.removeEventListener("mousedown", handleClick);
     };
+  }, []);
 
-
-    useEffect(() => {
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
-    const toggleMenu = () => {
-      setIsOpen(!isOpen);
-    };
-  
-    return (
-      <nav>
-        <div onClick={toggleMenu}>{isOpen ? 'X' : '☰'}</div>
-        <ul className={isOpen && isMobile ? 'open' : ''}>
+  return (
+    <nav>
+      <div onClick={() => setIsOpen(!isOpen)}>{isOpen ? 'X' : '☰'}</div>
+        <ul ref={node} className={isOpen ? 'open' : ''}>
           <li>
             <a href="/">Home</a>
           </li>
@@ -45,8 +48,9 @@ const Navbar: React.FC = () => {
             <a href="/contact-us">Contact Us</a>
           </li>
         </ul>
-      </nav>
-    );
+    </nav>
+  );
 }
 
 export default Navbar;
+
