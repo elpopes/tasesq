@@ -1,4 +1,6 @@
 import * as React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -11,8 +13,8 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-section contact-info">
           <h2>Contact Info</h2>
-          <p>Address: 1925 Guadalupe, San Antonio, Tx 78207</p>
-          <p>Phone: 210 231 0112</p>
+          <p><FontAwesomeIcon icon={faMapMarkerAlt} />      1925 Guadalupe, San Antonio, Tx 78207</p>
+          <p><FontAwesomeIcon icon={faPhone} />      (210) 231-0112</p>
         </div>
       </div>
       <div className="footer-bottom">
