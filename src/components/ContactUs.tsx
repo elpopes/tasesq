@@ -11,7 +11,7 @@ const ContactUs: React.FC = () => {
       </p>
       <h3>Contact Information</h3>
       <ul>
-        <li>Address: 1920 Guadalupe, San Antonio, TX 78207</li>
+        <li>Address: 1911 Guadalupe, San Antonio, TX 78207</li>
         <li>Phone: 210-231-0112</li>
         <li>Email: tasesq@msn.com</li>
       </ul>

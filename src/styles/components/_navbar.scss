@@ -1,7 +1,15 @@
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between; 
+    align-items: center;
     padding: 1em;
+    border-bottom: 1px solid grey; 
+
+    .App-logo {
+      height: 100px;
+      animation: App-logo-spin infinite 15s linear;
+      transform-origin: center center;
+    }
   
     div {
       font-size: 3em;
@@ -27,6 +35,8 @@ nav {
       }
   
       ul {
+        z-index: 1;
+        top: 2%;
         display: none; 
         flex-direction: column; 
         position: absolute; 
@@ -47,3 +57,12 @@ nav {
         }
     }
 }
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }

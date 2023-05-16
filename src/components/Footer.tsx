@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-section contact-info">
           <h2>Contact Info</h2>
-          <p><FontAwesomeIcon icon={faMapMarkerAlt} className="icon" /> 1925 Guadalupe, San Antonio, Tx 78207</p>
+          <p><FontAwesomeIcon icon={faMapMarkerAlt} className="icon" /> 1911 Guadalupe, San Antonio, Tx 78207</p>
           <p><FontAwesomeIcon icon={faPhone} className="icon" /> 210 231 0112</p>
         </div>
       </div>
