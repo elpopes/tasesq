@@ -4,7 +4,7 @@ import EmailForm from './EmailForm';
 
 const ContactUs: React.FC = () => {
   return (
-    <div className='container'>
+    <div className='contact-container'>
       <div className='contact-info'>
         <h2>Contact Us</h2>
         <p>

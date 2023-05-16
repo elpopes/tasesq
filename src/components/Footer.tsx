@@ -1,6 +1,5 @@
 import * as React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
+import ContactInfo from "./ContactInfo";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -12,10 +11,9 @@ const Footer: React.FC = () => {
           <p>We are a forward-thinking law firm that cultivates enduring relationships with our clients, rooted in mutual respect, trust, and the highest level of professional integrity. Our mission is to transform the conventional role of a law firm, with an unwavering commitment to achieving extraordinary outcomes for our clients.</p>
         </div>
         <div className="footer-section contact-info">
-          <h2>Contact Info</h2>
-          <p><FontAwesomeIcon icon={faMapMarkerAlt} className="icon" /> 1911 Guadalupe, San Antonio, Tx 78207</p>
-          <p><FontAwesomeIcon icon={faPhone} className="icon" /> 210 231 0112</p>
-        </div>
+  <h2>Contact Info</h2>
+  <ContactInfo />
+</div>
       </div>
       <div className="footer-bottom">
         <p>© {currentYear} TASESQ, San Antonio, TX. All rights reserved.</p>
