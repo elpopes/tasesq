@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  
+    h2 {
+      margin-bottom: 20px;
+    }
+  
+    p {
+      margin-bottom: 20px;
+    }
+  
+    ul {
+      margin-bottom: 20px;
+  
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  
+    .contact-info {
+      width: 45%;
+  
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  
+    .map-wrapper {
+      width: 45%;
+  
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+  
