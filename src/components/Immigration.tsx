@@ -2,7 +2,7 @@ import React from "react";
 
 const Immigration: React.FC = () => {
   return (
-    <div>
+    <div className="container">
       <h2>Immigration Services</h2>
       <p>
         At TASQ Law Firm, we specialize in providing comprehensive immigration services to individuals and businesses. Our team of experienced immigration attorneys is dedicated to helping clients navigate the complex immigration process with ease.

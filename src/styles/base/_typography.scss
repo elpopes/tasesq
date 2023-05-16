@@ -3,6 +3,11 @@ $font-family-headings: 'Georgia', serif;
 $link-color: #5D4037; 
 $link-hover-color: #607D8B;
 
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
 body, button, input, select, textarea {
   font-family: $font-family-base;
@@ -12,8 +17,20 @@ body, button, input, select, textarea {
   background-color: rgb(250, 250, 250);
 }
 
+.container {
+    flex-grow: 1;
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
 
 h1, h2, h3, h4, h5, h6 {
+    padding-top: 20px;
   font-family: $font-family-headings;
   font-weight: 700;
   color: #333;
@@ -22,12 +39,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.5em; 
-  line-height: 1.2;
+  line-height: 2;
 }
 
 h2 {
   font-size: 2.25em;
-  line-height: 1.25;
+  line-height: 2;
 }
 
 h3 {

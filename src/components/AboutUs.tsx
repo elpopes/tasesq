@@ -2,10 +2,10 @@ import React from 'react';
 
 const AboutUs: React.FC = () => {
   return (
-    <div>
+    <div className='container'>
       <h2>About Us</h2>
       <p>
-        Welcome to XYZ Law Firm, located on San Antonio's historic West Side. We are proud to serve our community with exceptional legal services.
+        Welcome to TASESQ Law Firm, located on San Antonio's historic West Side. We are proud to serve our community with exceptional legal services.
       </p>
       <h3>Lorenzo Tijerina Esq</h3>
       <p>

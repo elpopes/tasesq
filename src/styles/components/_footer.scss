@@ -1,17 +1,18 @@
 footer {
     color: #ddd;  
+    flex-shrink: 0;
   
     .footer-top {
       background-color: #161616;
-      padding: 20px 0;
+      padding: 20px;
       display: flex;
       justify-content: space-between;
-      width: 100%;
-      margin: 0 auto;
+      box-sizing: border-box;
   
       .footer-section {
         width: 25%;
         padding-left: 40px;
+        box-sizing: border-box;
   
         h2 {
             font-family: 'Cardo', serif;

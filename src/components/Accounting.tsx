@@ -2,7 +2,7 @@ import React from 'react';
 
 const Accounting: React.FC = () => {
   return (
-    <div>
+    <div className='container'>
       <h2>Accounting Services</h2>
       <p>
         At TASESQ Law Firm, we understand the importance of accurate and efficient accounting practices for individuals and businesses alike. Our dedicated accounting team provides a wide range of services to meet your financial needs.

@@ -2,7 +2,7 @@ import React from 'react';
 
 const FAQ: React.FC = () => {
   return (
-    <div>
+    <div className='container'>
       <h2>Frequently Asked Questions</h2>
 
       <h3>Immigration</h3>

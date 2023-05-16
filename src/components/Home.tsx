@@ -5,7 +5,8 @@ import HeroBanner from "./HeroBanner";
 
 const Home: React.FC = () => {
   return (
-    <div className="home">
+    <div className='container'>
+      <div className="home">
         <HeroBanner title="Welcome to Our Law Firm" subtitle="Providing top-quality legal services for over 40 years" />
       <h1>Welcome to TASESQ</h1>
       <p>
@@ -20,6 +21,7 @@ const Home: React.FC = () => {
         legal needs.
       </p>
     </div>
+      </div>
   );
 };
 

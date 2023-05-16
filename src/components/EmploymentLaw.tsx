@@ -2,7 +2,7 @@ import React from 'react';
 
 const EmploymentLaw: React.FC = () => {
   return (
-    <div>
+    <div className='container'>
       <h2>Employment Law Services</h2>
       <p>
         At TASESQ Law Firm, we provide comprehensive employment law services to protect the rights and interests of employees and employers. With a specialization in federal cases, we offer strategic legal representation tailored to the complexities of employment law at the federal level.
