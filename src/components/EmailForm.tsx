@@ -36,7 +36,7 @@ const EmailForm: React.FC = () => {
     setBody('');
   };
   return (
-    <div>
+    <div className="email-form">
       <h2>Email Form</h2>
       <form onSubmit={handleSubmit}>
         <label>
