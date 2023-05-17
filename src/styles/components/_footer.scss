@@ -6,12 +6,12 @@ footer {
       background-color: #161616;
       padding: 20px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       box-sizing: border-box;
   
       .footer-section {
-        width: 25%;
-        padding-left: 40px;
+        width: 45%;
+        padding: 0 20px;
         box-sizing: border-box;
   
         h2 {
@@ -19,7 +19,7 @@ footer {
             color: #f8f8f8;  
             font-size: 1.2em;
             margin-bottom: 10px;
-            text-align: left;
+            text-align: center;
         }
   
         p {
