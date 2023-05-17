@@ -22,17 +22,16 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <>
-    <div className="contact-info-bar">
-      <ContactInfo />
-    </div>
-    <nav>
-          <Logo className="App-logo" />
-      <div onClick={() => setIsOpen(!isOpen)}>{isOpen ? 'X' : '☰'}</div>
-        <ul ref={node} className={isOpen ? 'open' : ''}>
-          <li>
-            <a href="/">Home</a>
-          </li>
+<>
+  <div className="contact-info-bar">
+    <ContactInfo className="narrow-screen" />
+  </div>
+  <nav>
+    <Logo className="App-logo" />
+    <ContactInfo className="contact-info-nav wide-screen" />
+    <div onClick={() => setIsOpen(!isOpen)}>{isOpen ? 'X' : '☰'}</div>
+    <ul ref={node} className={isOpen ? 'open' : ''}>
+      <li><a href="/">Home</a></li>
           <li>
             <a href="/immigration">Immigration</a>
           </li>

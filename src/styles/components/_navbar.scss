@@ -1,8 +1,44 @@
-.contact-info-bar {
+.contact-info-nav.wide-screen {
+    display: none;
+  }
+
+  .contact-info-nav.wide-screen p {
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-info p {
+    margin: 0;
+  }
+
+  .contact-info p:first-child {
+    margin-right: 20px;
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+
+
+  .contact-info-bar {
     display: flex;
     justify-content: center;
     background-color: burlywood;
     padding: 1em;
+  }
+
+  @media (min-width: 769px) {
+    .contact-info-nav.wide-screen {
+      display: block;
+    }
+  
+    .contact-info-bar {
+      display: none;
+    }
   }
 
 nav {
