@@ -10,9 +10,9 @@ const Footer: React.FC = () => {
           <h2>About Us</h2>
           <p>We are a forward-thinking law firm that cultivates enduring relationships with our clients, rooted in mutual respect, trust, and the highest level of professional integrity. Our mission is to transform the conventional role of a law firm, with an unwavering commitment to achieving extraordinary outcomes for our clients.</p>
         </div>
-        <div className="footer-section contact-info">
+        <div className="footer-section footer-contact-info">
   <h2>Contact Info</h2>
-  <ContactInfo />
+  <ContactInfo className="footer-contact-info-content" />
 </div>
       </div>
       <div className="footer-bottom">
