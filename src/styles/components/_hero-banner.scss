@@ -1,8 +1,10 @@
 .hero-banner {
-    height: 450px;
+    height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-size: cover;
+    background-position: top;
     align-items: center;
     position: relative;
     overflow: hidden; 

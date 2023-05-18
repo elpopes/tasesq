@@ -1,4 +1,5 @@
 import * as React from "react";
+import cityscape from '../assets/images/backgrounds/sunset.jpg';
 
 interface HeroBannerProps {
   title: string;
@@ -7,7 +8,10 @@ interface HeroBannerProps {
 
 const HeroBanner: React.FC<HeroBannerProps> = ({ title, subtitle }) => {
   return (
-    <div className="hero-banner">
+    <div 
+      className="hero-banner"
+      style={{ backgroundImage: `url(${cityscape})` }}
+    >
       <h1>{title}</h1>
       <p>{subtitle}</p>
     </div>
@@ -15,3 +19,4 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ title, subtitle }) => {
 };
 
 export default HeroBanner;
+
