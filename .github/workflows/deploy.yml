@@ -19,7 +19,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.8.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages # The branch to deploy to
-          publish_dir: ./build # The directory to deploy
-
+          github_token: ${{ secrets.GH_PAGES_PAT }} # Use the name of your secret here
+          publish_branch: gh-pages
+          publish_dir: ./build
