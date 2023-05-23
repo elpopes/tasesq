@@ -33,13 +33,18 @@ const Home: React.FC = () => {
         return () => clearInterval(intervalId); 
     }, [currentSlide]);
 
-  return (
-    <div className="home">
-    <HeroBanner 
-      title={slides[currentSlide].title} 
-      subtitle={slides[currentSlide].subtitle} 
-      image={slides[currentSlide].image} 
-    />
+
+    return (
+        <div className="home">
+          {slides.map((slide, index) => (
+            <HeroBanner 
+              title={slide.title} 
+              subtitle={slide.subtitle} 
+              image={slide.image} 
+              index={currentSlide === index ? 0 : index + 1}
+              key={index}
+            />
+          ))}
       <h1>Welcome to TASESQ</h1>
       <p>
         We are a San Antonio-based federal law firm with over 40 years of

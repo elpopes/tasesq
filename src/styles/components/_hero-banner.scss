@@ -1,3 +1,10 @@
+.home {
+    position: relative;
+    overflow: hidden; 
+    width: 100vw; 
+    height: 750px; 
+  }
+
 .hero-banner {
     height: 750px;
     display: flex;
@@ -6,7 +13,9 @@
     background-size: cover;
     background-position: top;
     align-items: center;
-    position: relative;
+    transition: transform 1s ease-in-out;
+    position: absolute;
+    right: 0;
     overflow: hidden; 
   
     h1, p {
@@ -51,5 +60,19 @@
     }
   }
 
-  /// just trying to push this again...
-  /// and again...
+  .hero-banner.slide-0 {
+    transform: translateX(0);
+  }
+
+  
+.hero-banner:not(.slide-0) {
+    transform: translateX(100%);
+  }
+  
+  .hero-banner.slide-1 {
+    transform: translateX(100%);
+  }
+  
+  .hero-banner.slide-2 {
+    transform: translateX(200%);
+  }
