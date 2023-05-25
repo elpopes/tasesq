@@ -1,28 +1,29 @@
 import React from 'react';
+import { aboutUsText } from '../translations/AboutUs';
 
 const AboutUs: React.FC = () => {
   return (
     <div className='container'>
-      <h2>About Us</h2>
+      <h2>{aboutUsText.en.heading}</h2>
       <p>
-        Welcome to TASESQ Law Firm, located on San Antonio's historic West Side. We are proud to serve our community with exceptional legal services.
+        {aboutUsText.en.introduction}
       </p>
-      <h3>Lorenzo Tijerina Esq</h3>
+      <h3>{aboutUsText.en.lorenzoHeading}</h3>
       <p>
-        Lorenzo Tijerina Esq is a highly experienced attorney with a passion for federal law. With over 40 years of practice, he has built an outstanding reputation for his dedication, expertise, and successful outcomes.
-      </p>
-      <p>
-        Lorenzo Tijerina Esq has a deep understanding of the complexities of federal law and uses his extensive knowledge to provide comprehensive legal representation to clients. His commitment to delivering personalized attention and fighting tirelessly for their rights has earned him the respect and trust of countless clients.
-      </p>
-      <h3>Our Firm's History</h3>
-      <p>
-        Our law firm is housed in a building with a rich history. Before becoming a legal office, it served as a beloved bike shop on San Antonio's West Side. The building's transformation from a bike shop to a place of legal advocacy reflects our commitment to adapt and evolve while remaining rooted in the community we serve.
+        {aboutUsText.en.lorenzoBio1}
       </p>
       <p>
-        At XYZ Law Firm, we are proud of our history and the connections we have fostered within San Antonio. We continue to honor the heritage of our location while focusing on providing exceptional legal services to our clients.
+        {aboutUsText.en.lorenzoBio2}
+      </p>
+      <h3>{aboutUsText.en.historyHeading}</h3>
+      <p>
+        {aboutUsText.en.history1}
       </p>
       <p>
-        Contact XYZ Law Firm today to schedule a consultation and experience the dedicated legal representation that has made us a trusted name in federal law for over four decades.
+        {aboutUsText.en.history2}
+      </p>
+      <p>
+        {aboutUsText.en.contact}
       </p>
     </div>
   );
