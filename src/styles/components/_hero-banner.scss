@@ -5,7 +5,8 @@
     height: 750px; 
   }
 
-.hero-banner {
+  .hero-banner {
+    width: 100%; // takes full width of the parent
     height: 750px;
     display: flex;
     flex-direction: column;
@@ -14,9 +15,9 @@
     background-position: top;
     align-items: center;
     transition: transform 1s ease-in-out;
-    position: absolute;
-    right: 0;
-    overflow: hidden; 
+    position: absolute; 
+    left: 0; // position it on the left, not right
+    overflow: hidden;
   
     h1, p {
       position: relative;
