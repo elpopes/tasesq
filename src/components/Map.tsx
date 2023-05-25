@@ -1,9 +1,10 @@
 import React from 'react';
+import { mapText } from '../translations/Map';
 
 const Map: React.FC = () => {
   return (
     <div style={{ width: '600px' }}>
-      <h2 style={{ marginBottom: '20px' }}>Location Map</h2>
+      <h2 style={{ marginBottom: '20px' }}>{mapText.en.locationTitle}</h2>
       <iframe
         title="Office Location"
         width="100%"
@@ -17,4 +18,3 @@ const Map: React.FC = () => {
 };
 
 export default Map;
-

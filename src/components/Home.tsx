@@ -3,66 +3,62 @@ import HeroBanner from "./HeroBanner";
 import cityscape1 from '../assets/images/backgrounds/sunset.jpg';
 import cityscape2 from '../assets/images/backgrounds/cityscape.jpg';
 import cityscape3 from '../assets/images/backgrounds/blindjustice.jpg';
+import { homeText } from '../translations/Home';
 
-const slides = [
-    {
-      title: "Welcome to Our Law Firm",
-      subtitle: "Providing top-quality legal services for over 40 years",
-      image: cityscape1,
-    },
-    {
-      title: "Experienced Legal Team",
-      subtitle: "A team of professionals you can trust",
-      image: cityscape2,
-    },
-    {
-      title: "Contact Us Today",
-      subtitle: "We're here to help with your legal needs",
-      image: cityscape3,
-    },
-  ];
+interface Slide {
+    title: string;
+    subtitle: string;
+    image?: string;
+  }
 
-  const Home: React.FC = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
+  const slides: Slide[] = homeText.en.slides.map((slide, index) => {
+    switch (index) {
+      case 0:
+        return {...slide, image: cityscape1};
+      case 1:
+        return {...slide, image: cityscape2};
+      case 2:
+        return {...slide, image: cityscape3};
+      default:
+        return slide;
+    }
+  });
   
-    useEffect(() => {
-      const intervalId = setInterval(() => {
-        setCurrentSlide((currentSlide + 1) % slides.length);
-      }, 5000);
-  
-      return () => clearInterval(intervalId); 
-    }, [currentSlide]);
-  
-    return (
-      <div className="home">
-        <div className="home__banner">
-          {slides.map((slide, index) => (
-            <HeroBanner 
-              title={slide.title} 
-              subtitle={slide.subtitle} 
-              image={slide.image} 
-              index={currentSlide === index ? 0 : index + 1}
-              key={index}
-            />
-          ))}
-        </div>
-        <div className="container">
-          <h1>Welcome to TASESQ</h1>
-          <p>
-            We are a San Antonio-based federal law firm with over 40 years of
-            experience. Our seasoned team of legal professionals is dedicated to
-            providing the highest quality legal services to our clients. We
-            specialize in a broad range of federal legal matters and are committed
-            to delivering results for our clients.
-          </p>
-          <p>
-            Contact us today to learn more about how we can assist you with your
-            legal needs.
-          </p>
-        </div>
+const Home: React.FC = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentSlide((currentSlide + 1) % slides.length);
+    }, 5000);
+
+    return () => clearInterval(intervalId); 
+  }, [currentSlide]);
+
+  return (
+    <div className="home">
+      <div className="home__banner">
+        {slides.map((slide, index) => (
+          <HeroBanner 
+            title={slide.title} 
+            subtitle={slide.subtitle} 
+            image={slide.image} 
+            index={currentSlide === index ? 0 : index + 1}
+            key={index}
+          />
+        ))}
       </div>
-    );
-  };
-  
+      <div className="container">
+        <h1>{homeText.en.welcomeTitle}</h1>
+        <p>
+          {homeText.en.welcomeDescription1}
+        </p>
+        <p>
+          {homeText.en.welcomeDescription2}
+        </p>
+      </div>
+    </div>
+  );
+};
 
 export default Home;
