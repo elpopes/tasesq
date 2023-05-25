@@ -2,17 +2,18 @@ import React from 'react';
 import Map from './Map';
 import EmailForm from './EmailForm';
 import ContactInfo from './ContactInfo';
+import { contactUsText } from '../translations/ContactUs';
 
 const ContactUs: React.FC = () => {
   return (
     <div id="contact-us">
       <div className='contact-container'>
         <div className='contact-info'>
-          <h2>Contact Us</h2>
+          <h2>{contactUsText.en.heading}</h2>
           <p>
-            We would love to hear from you! Feel free to reach out to us using any of the contact methods below.
+            {contactUsText.en.introduction}
           </p>
-          <h3>Contact Information</h3>
+          <h3>{contactUsText.en.contactInfoHeading}</h3>
           <ul>
             <ContactInfo/>
           </ul>
@@ -27,3 +28,4 @@ const ContactUs: React.FC = () => {
 };
 
 export default ContactUs;
+

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { emailFormText } from '../translations/EmailForm';
 
 const EmailForm: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -35,23 +36,24 @@ const EmailForm: React.FC = () => {
     setSubject('');
     setBody('');
   };
+
   return (
     <div className="email-form">
-      <h2>Email Form</h2>
+      <h2>{emailFormText.en.heading}</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          Email:
+          {emailFormText.en.emailLabel}
           <input type="email" name="email" value={email} onChange={handleInputChange} />
         </label>
         <label>
-          Subject:
+          {emailFormText.en.subjectLabel}
           <input type="text" name="subject" value={subject} onChange={handleInputChange} />
         </label>
         <label>
-          Body:
+          {emailFormText.en.bodyLabel}
           <textarea name="body" value={body} onChange={handleInputChange} />
         </label>
-        <button type="submit">Send</button>
+        <button type="submit">{emailFormText.en.submitButton}</button>
       </form>
     </div>
   );
