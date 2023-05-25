@@ -1,34 +1,31 @@
 import React from 'react';
+import { accountingText } from '../translations/Accounting';
 
 const Accounting: React.FC = () => {
   return (
     <div className='container'>
-      <h2>Accounting Services</h2>
+      <h2>{accountingText.en.heading}</h2>
       <p>
-        At TASESQ Law Firm, we understand the importance of accurate and efficient accounting practices for individuals and businesses alike. Our dedicated accounting team provides a wide range of services to meet your financial needs.
+        {accountingText.en.introduction}
       </p>
-      <h3>Our Services</h3>
+      <h3>{accountingText.en.servicesHeading}</h3>
       <ul>
-        <li>Bookkeeping and financial record management</li>
-        <li>Payroll processing and tax reporting</li>
-        <li>Tax planning and preparation</li>
-        <li>Financial statement preparation</li>
-        <li>Budgeting and cash flow management</li>
-        <li>Business entity formation and registration</li>
-        <li>Assistance with tax audits and compliance</li>
-        <li>Financial analysis and strategic planning</li>
+        {accountingText.en.serviceList.map((service, index) => (
+          <li key={index}>{service}</li>
+        ))}
       </ul>
       <p>
-        Our experienced accountants stay up to date with the latest tax laws and regulations to ensure compliance and maximize tax-saving opportunities for our clients. We offer personalized solutions tailored to your specific financial goals and circumstances.
+        {accountingText.en.para1}
       </p>
       <p>
-        Whether you need assistance with individual tax returns, managing your business finances, or strategic financial planning, our accounting team is here to help you navigate the complexities of accounting and achieve financial success.
+        {accountingText.en.para2}
       </p>
       <p>
-        Contact us today to schedule a consultation and learn how our accounting services can benefit you or your business.
+        {accountingText.en.contact}
       </p>
     </div>
   );
 };
 
 export default Accounting;
+
