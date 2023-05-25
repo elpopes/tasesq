@@ -1,12 +1,20 @@
 .home {
+    display: flex;
+    flex-direction: column;
+}
+
+.home__banner {
     position: relative;
     overflow: hidden; 
     width: 100vw; 
-    height: 750px; 
-  }
+    height: 750px;
+}
 
-  .hero-banner {
-    width: 100%; // takes full width of the parent
+.hero-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 750px;
     display: flex;
     flex-direction: column;
@@ -14,66 +22,51 @@
     background-size: cover;
     background-position: top;
     align-items: center;
-    transition: transform 1s ease-in-out;
-    position: absolute; 
-    left: 0; // position it on the left, not right
-    overflow: hidden;
-  
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
     h1, p {
-      position: relative;
-      opacity: 0; 
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
+        position: relative;
+        opacity: 0; 
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
     }
-  
+
     h1 {
-      animation-name: slideInDownH1;
-      animation-delay: 0s; 
+        animation-name: slideInDownH1;
+        animation-delay: 0s; 
     }
-  
+
     p {
-      animation-name: slideInDownP;
-      animation-delay: 0.5s; 
+        animation-name: slideInDownP;
+        animation-delay: 0.5s; 
     }
-  }
-  
-  @keyframes slideInDownH1 {
-    0% {
-      opacity: 0; 
-      transform: translateY(-100%); 
-    }
-  
-    100% {
-      opacity: 1; 
-      transform: translateY(0); 
-    }
-  }
-  
-  @keyframes slideInDownP {
-    0% {
-      opacity: 0; 
-      transform: translateY(-100%); 
-    }
-  
-    100% {
-      opacity: 1; 
-      transform: translateY(0); 
-    }
-  }
+}
 
-  .hero-banner.slide-0 {
-    transform: translateX(0);
-  }
+@keyframes slideInDownH1 {
+    0% {
+        opacity: 0; 
+        transform: translateY(-100%); 
+    }
 
-  
-.hero-banner:not(.slide-0) {
-    transform: translateX(100%);
-  }
-  
-  .hero-banner.slide-1 {
-    transform: translateX(100%);
-  }
-  
-  .hero-banner.slide-2 {
-    transform: translateX(200%);
-  }
+    100% {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+@keyframes slideInDownP {
+    0% {
+        opacity: 0; 
+        transform: translateY(-100%); 
+    }
+
+    100% {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.hero-banner.slide-0 {
+    opacity: 1;
+}
