@@ -6,9 +6,14 @@ const LanguageButton: React.FC = () => {
 
   if (!toggleLanguage) return null;
 
+  const handleClick = () => {
+    console.log('Current Language:', language);
+    toggleLanguage();
+  }
+
   return (
-    <button onClick={toggleLanguage}>
-      {language === 'en' ? 'In English' : 'en Ingles'}
+    <button onClick={handleClick}>
+      {language === 'en' ? 'en Ingles' : 'In English'}
     </button>
   );
 };
