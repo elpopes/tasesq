@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className="App">
         <Navbar />
         <Routes>    
@@ -31,4 +31,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-
