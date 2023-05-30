@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { ReactComponent as Logo } from './logo.svg';
 import ContactInfo from "./ContactInfo";
 import { Link } from 'react-router-dom'; 
-import { navbarText } from '../translations/Navbar'; 
+import { navbarText } from '../translations/Navbar';
+import LanguageButton from "./LanguageButton";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,6 +37,7 @@ const Navbar: React.FC = () => {
             <li key={index}><Link to={link.path}>{link.text}</Link></li>
           ))}
         </ul>
+        <LanguageButton />
       </nav>
     </>
   );
