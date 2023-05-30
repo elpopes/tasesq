@@ -12,9 +12,9 @@ const LanguageButton: React.FC = () => {
   }
 
   return (
-    <button onClick={handleClick}>
-      {language === 'en' ? 'en Ingles' : 'In English'}
-    </button>
+    <button className="lang-button" onClick={handleClick}>
+    {language === 'en' ? 'En Espanol' : 'In English'}
+  </button>
   );
 };
 

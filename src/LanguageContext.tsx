@@ -11,7 +11,7 @@ const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState('en');
 
   const toggleLanguage = () => {
-    setLanguage((current) => (current === 'en' ? 'en' : 'es'));
+    setLanguage((current) => (current === 'en' ? 'es' : 'en'));
   };
 
   return (

@@ -1,0 +1,18 @@
+.lang-button {
+    display: inline-block;
+    background-color: #0045e7; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .lang-button:hover {
+    background-color: white; 
+    color: black; 
+  }
+  
