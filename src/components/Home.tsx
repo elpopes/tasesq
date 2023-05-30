@@ -1,30 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import HeroBanner from "./HeroBanner";
 import cityscape1 from '../assets/images/backgrounds/sunset.jpg';
 import cityscape2 from '../assets/images/backgrounds/cityscape.jpg';
 import cityscape3 from '../assets/images/backgrounds/blindjustice.jpg';
 import { homeText } from '../translations/Home';
+import { LanguageContext, LanguageContextProps } from '../LanguageContext'; // Import LanguageContextProps here
 
 interface Slide {
     title: string;
     subtitle: string;
     image?: string;
-  }
+}
 
-  const slides: Slide[] = homeText.en.slides.map((slide, index) => {
-    switch (index) {
-      case 0:
-        return {...slide, image: cityscape1};
-      case 1:
-        return {...slide, image: cityscape2};
-      case 2:
-        return {...slide, image: cityscape3};
-      default:
-        return slide;
-    }
-  });
-  
 const Home: React.FC = () => {
+    const { language } = useContext<LanguageContextProps>(LanguageContext);
+    const slides: Slide[] = homeText[language].slides.map((slide: Slide, index: number) => {
+        switch (index) {
+        case 0:
+            return {...slide, image: cityscape1};
+        case 1:
+            return {...slide, image: cityscape2};
+        case 2:
+            return {...slide, image: cityscape3};
+        default:
+            return slide;
+        }
+  });
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -33,7 +35,7 @@ const Home: React.FC = () => {
     }, 5000);
 
     return () => clearInterval(intervalId); 
-  }, [currentSlide]);
+  }, [currentSlide, slides.length]);
 
   return (
     <div className="home">
@@ -49,12 +51,12 @@ const Home: React.FC = () => {
         ))}
       </div>
       <div className="container">
-        <h1>{homeText.en.welcomeTitle}</h1>
+        <h1>{homeText[language].welcomeTitle}</h1>
         <p>
-          {homeText.en.welcomeDescription1}
+          {homeText[language].welcomeDescription1}
         </p>
         <p>
-          {homeText.en.welcomeDescription2}
+          {homeText[language].welcomeDescription2}
         </p>
       </div>
     </div>

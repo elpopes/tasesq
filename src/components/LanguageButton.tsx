@@ -1,20 +1,19 @@
 import React, { useContext } from 'react';
-import { LanguageContext } from '../LanguageContext';
+import { LanguageContext, Language } from '../LanguageContext';
 
 const LanguageButton: React.FC = () => {
-  const { language, toggleLanguage } = useContext(LanguageContext);
+  const { language, setLanguage } = useContext(LanguageContext);
 
-  if (!toggleLanguage) return null;
+  if (!setLanguage) return null; 
 
-  const handleClick = () => {
-    console.log('Current Language:', language);
-    toggleLanguage();
-  }
+  const toggleLanguage = () => {
+    setLanguage((current: Language) => (current === 'en' ? 'es' : 'en'));
+  };
 
   return (
-    <button className="lang-button" onClick={handleClick}>
-    {language === 'en' ? 'En Espanol' : 'In English'}
-  </button>
+    <button onClick={toggleLanguage}>
+      {language === 'en' ? 'Español' : 'English'}
+    </button>
   );
 };
 
