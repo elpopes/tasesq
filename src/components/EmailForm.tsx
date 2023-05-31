@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { emailFormText } from '../translations/EmailForm';
-
+import { LanguageContext, LanguageContextProps } from '../LanguageContext'; 
 const EmailForm: React.FC = () => {
+  const { language } = React.useContext<LanguageContextProps>(LanguageContext); 
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [body, setBody] = useState('');
@@ -39,21 +40,21 @@ const EmailForm: React.FC = () => {
 
   return (
     <div className="email-form">
-      <h2>{emailFormText.en.heading}</h2>
+      <h2>{emailFormText[language].heading}</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          {emailFormText.en.emailLabel}
+          {emailFormText[language].emailLabel}
           <input type="email" name="email" value={email} onChange={handleInputChange} />
         </label>
         <label>
-          {emailFormText.en.subjectLabel}
+          {emailFormText[language].subjectLabel}
           <input type="text" name="subject" value={subject} onChange={handleInputChange} />
         </label>
         <label>
-          {emailFormText.en.bodyLabel}
+          {emailFormText[language].bodyLabel}
           <textarea name="body" value={body} onChange={handleInputChange} />
         </label>
-        <button type="submit">{emailFormText.en.submitButton}</button>
+        <button type="submit">{emailFormText[language].submitButton}</button>
       </form>
     </div>
   );

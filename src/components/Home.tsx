@@ -4,7 +4,7 @@ import cityscape1 from '../assets/images/backgrounds/sunset.jpg';
 import cityscape2 from '../assets/images/backgrounds/cityscape.jpg';
 import cityscape3 from '../assets/images/backgrounds/blindjustice.jpg';
 import { homeText } from '../translations/Home';
-import { LanguageContext, LanguageContextProps } from '../LanguageContext'; // Import LanguageContextProps here
+import { LanguageContext, LanguageContextProps } from '../LanguageContext'; 
 
 interface Slide {
     title: string;

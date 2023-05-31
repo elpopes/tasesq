@@ -1,11 +1,14 @@
 import React from 'react';
 import { faqText } from '../translations/FAQ';
+import { LanguageContext, LanguageContextProps } from '../LanguageContext';
 
 const FAQ: React.FC = () => {
+  const { language } = React.useContext<LanguageContextProps>(LanguageContext);
+
   return (
     <div className='container'>
-      <h2>{faqText.en.heading}</h2>
-      {faqText.en.sections.map((section, index) => (
+      <h2>{faqText[language].heading}</h2>
+      {faqText[language].sections.map((section, index) => (
         <React.Fragment key={index}>
           <h3>{section.title}</h3>
           {section.questions.map((q, qIndex) => (

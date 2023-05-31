@@ -1,9 +1,10 @@
 import React from 'react';
 import { immigrationText } from '../translations/Immigration';
-
+import { LanguageContext, LanguageContextProps } from '../LanguageContext'; 
 
 const Immigration: React.FC = () => {
-  const t = immigrationText.en;
+  const { language } = React.useContext<LanguageContextProps>(LanguageContext); 
+  const t = immigrationText[language];
 
   return (
     <div className="container">
