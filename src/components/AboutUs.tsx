@@ -1,29 +1,32 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { aboutUsText } from '../translations/AboutUs';
+import { LanguageContext } from '../LanguageContext';
 
 const AboutUs: React.FC = () => {
+  const { language } = useContext(LanguageContext); 
+
   return (
     <div className='container'>
-      <h2>{aboutUsText.en.heading}</h2>
+      <h2>{aboutUsText[language].heading}</h2>
       <p>
-        {aboutUsText.en.introduction}
+        {aboutUsText[language].introduction}
       </p>
-      <h3>{aboutUsText.en.lorenzoHeading}</h3>
+      <h3>{aboutUsText[language].lorenzoHeading}</h3>
       <p>
-        {aboutUsText.en.lorenzoBio1}
-      </p>
-      <p>
-        {aboutUsText.en.lorenzoBio2}
-      </p>
-      <h3>{aboutUsText.en.historyHeading}</h3>
-      <p>
-        {aboutUsText.en.history1}
+        {aboutUsText[language].lorenzoBio1}
       </p>
       <p>
-        {aboutUsText.en.history2}
+        {aboutUsText[language].lorenzoBio2}
+      </p>
+      <h3>{aboutUsText[language].historyHeading}</h3>
+      <p>
+        {aboutUsText[language].history1}
       </p>
       <p>
-        {aboutUsText.en.contact}
+        {aboutUsText[language].history2}
+      </p>
+      <p>
+        {aboutUsText[language].contact}
       </p>
     </div>
   );
