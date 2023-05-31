@@ -6,5 +6,12 @@ export const emailFormText = {
       bodyLabel: 'Body:',
       submitButton: 'Send',
     },
+    es: {
+      heading: 'Formulario de Correo Electrónico',
+      emailLabel: 'Correo electrónico:',
+      subjectLabel: 'Asunto:',
+      bodyLabel: 'Mensaje:',
+      submitButton: 'Enviar',
+    },
   };
   

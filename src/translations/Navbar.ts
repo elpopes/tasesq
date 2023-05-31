@@ -10,4 +10,15 @@ export const navbarText = {
         { path: "/contact-us", text: "Contact Us" },
       ],
     },
+    es: {
+      links: [
+        { path: "/", text: "Inicio" },
+        { path: "/immigration", text: "Inmigración" },
+        { path: "/employment-law", text: "Ley Laboral" },
+        { path: "/accounting", text: "Contabilidad" },
+        { path: "/faqs", text: "Preguntas Frecuentes" },
+        { path: "/about-us", text: "Sobre Nosotros" },
+        { path: "/contact-us", text: "Contacto" },
+      ],
+    },
   };
