@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { accountingText } from '../translations/Accounting';
-import { LanguageContext, LanguageContextProps } from '../LanguageContext'; // Import LanguageContextProps here
+import { LanguageContext, LanguageContextProps } from '../LanguageContext'; 
 
 const Accounting: React.FC = () => {
-  const { language } = useContext<LanguageContextProps>(LanguageContext); // Use the context here
+  const { language } = useContext<LanguageContextProps>(LanguageContext);
 
   return (
     <div className='container'>
