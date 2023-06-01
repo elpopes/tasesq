@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { emailFormText } from '../translations/EmailForm';
 import { LanguageContext, LanguageContextProps } from '../LanguageContext'; 
+
 const EmailForm: React.FC = () => {
   const { language } = React.useContext<LanguageContextProps>(LanguageContext); 
   const [email, setEmail] = useState('');
@@ -25,8 +26,10 @@ const EmailForm: React.FC = () => {
       text: body,
     };
   
+    const apiGatewayEndpoint = 'https://ct4vxj5v86.execute-api.us-east-2.amazonaws.com/prod';
+  
     try {
-      await axios.post('/send-email', message);
+      await axios.post(apiGatewayEndpoint, message);
       alert('Email sent successfully!');
     } catch (error) {
       console.error('Error sending email', error);
