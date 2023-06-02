@@ -26,7 +26,7 @@ const EmailForm: React.FC = () => {
       text: body,
     };
   
-    const apiGatewayEndpoint = 'https://ct4vxj5v86.execute-api.us-east-2.amazonaws.com/prod';
+    const apiGatewayEndpoint = 'https://wfgvl0ax6a.execute-api.us-east-1.amazonaws.com';
   
     try {
       await axios.post(apiGatewayEndpoint, message);
