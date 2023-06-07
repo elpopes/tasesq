@@ -28,9 +28,12 @@ const EmailForm: React.FC = () => {
   
     const apiGatewayEndpoint = 'https://wfgvl0ax6a.execute-api.us-east-1.amazonaws.com/sendemail';
 
+    console.log('Message:', message);
+    console.log('API Gateway Endpoint:', apiGatewayEndpoint);
   
     try {
-      await axios.post(apiGatewayEndpoint, message);
+      const response = await axios.post(apiGatewayEndpoint, message);
+      console.log('Response:', response.data);
       alert('Email sent successfully!');
     } catch (error) {
       console.error('Error sending email', error);
