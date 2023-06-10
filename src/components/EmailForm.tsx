@@ -26,7 +26,7 @@ const EmailForm: React.FC = () => {
       text: body,
     };
   
-    const apiGatewayEndpoint = 'https://3xmkqnscck.execute-api.us-east-1.amazonaws.com/prod';
+    // const apiGatewayEndpoint = 'https://3xmkqnscck.execute-api.us-east-1.amazonaws.com/prod';
 
     console.log('Message:', message);
     console.log('API Gateway Endpoint:', apiGatewayEndpoint);
