@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import { emailFormText } from '../translations/EmailForm';
 import { LanguageContext, LanguageContextProps } from '../LanguageContext'; 
@@ -11,12 +11,6 @@ const EmailForm: React.FC = () => {
   const [num1, setNum1] = useState(Math.floor(Math.random() * 10));
   const [num2, setNum2] = useState(Math.floor(Math.random() * 10));
   const [answer, setAnswer] = useState('');
-
-  useEffect(() => {
-    setNum1(Math.floor(Math.random() * 10));
-    setNum2(Math.floor(Math.random() * 10));
-  }, []);
-
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
@@ -51,6 +45,11 @@ const EmailForm: React.FC = () => {
       const response = await axios.post(apiGatewayEndpoint, message);
       console.log('Response:', response.data);
       alert('Email sent successfully!');
+      
+      setNum1(Math.floor(Math.random() * 10));
+      setNum2(Math.floor(Math.random() * 10));
+      setAnswer('');
+
     } catch (error) {
       console.error('Error sending email', error);
       alert('An error occurred while sending the email.');
@@ -88,3 +87,4 @@ const EmailForm: React.FC = () => {
 };
 
 export default EmailForm;
+
