@@ -3,6 +3,12 @@ import axios from 'axios';
 import { emailFormText } from '../translations/EmailForm';
 import { LanguageContext, LanguageContextProps } from '../LanguageContext'; 
 
+function validateEmail(email: string) {
+    var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailPattern.test(email);
+}
+
+
 const EmailForm: React.FC = () => {
   const { language } = React.useContext<LanguageContextProps>(LanguageContext); 
   const [email, setEmail] = useState('');
@@ -20,13 +26,25 @@ const EmailForm: React.FC = () => {
     if (name === 'answer') setAnswer(value);
   };
 
+  
   const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
-
-    if (parseInt(answer) !== num1 + num2) {
-        alert('Math answer is incorrect. Please try again.');
+      event.preventDefault();
+      if (!email || !validateEmail(email)) {
+        alert('Please enter a valid email address.');
         return;
-    }
+      }
+      if (!subject) {
+        alert('Please enter a subject.');
+        return;
+      }
+      if (!body) {
+        alert('Please enter a message body.');
+        return;
+      }
+      if (parseInt(answer) !== num1 + num2) {
+          alert('Math answer is incorrect. Please try again.');
+          return;
+      }
   
     const message = {
       to: 'tasesq@msn.com',
@@ -51,9 +69,13 @@ const EmailForm: React.FC = () => {
       setAnswer('');
 
     } catch (error) {
-      console.error('Error sending email', error);
-      alert('An error occurred while sending the email.');
-    }
+        console.error('Error sending email', error);
+        if (error.response) {
+          alert('An error occurred: ' + error.response.data.body);
+        } else {
+          alert('An error occurred while sending the email.');
+        }
+      }
   
     setEmail('');
     setSubject('');
