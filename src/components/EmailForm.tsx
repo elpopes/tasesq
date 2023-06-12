@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { emailFormText } from '../translations/EmailForm';
 import { LanguageContext, LanguageContextProps } from '../LanguageContext'; 
@@ -8,25 +8,41 @@ const EmailForm: React.FC = () => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [body, setBody] = useState('');
+  const [num1, setNum1] = useState(Math.floor(Math.random() * 10));
+  const [num2, setNum2] = useState(Math.floor(Math.random() * 10));
+  const [answer, setAnswer] = useState('');
+
+  useEffect(() => {
+    setNum1(Math.floor(Math.random() * 10));
+    setNum2(Math.floor(Math.random() * 10));
+  }, []);
+
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
     if (name === 'email') setEmail(value);
     if (name === 'subject') setSubject(value);
     if (name === 'body') setBody(value);
+    if (name === 'answer') setAnswer(value);
   };
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+
+    if (parseInt(answer) !== num1 + num2) {
+        alert('Math answer is incorrect. Please try again.');
+        return;
+    }
   
     const message = {
       to: 'tasesq@msn.com',
       from: email,
       subject,
       text: body,
+      math: { num1, num2, answer },
     };
   
-    // const apiGatewayEndpoint = 'https://3xmkqnscck.execute-api.us-east-1.amazonaws.com/prod';
+    const apiGatewayEndpoint = 'https://3xmkqnscck.execute-api.us-east-1.amazonaws.com/prod';
 
     console.log('Message:', message);
     console.log('API Gateway Endpoint:', apiGatewayEndpoint);
@@ -60,6 +76,10 @@ const EmailForm: React.FC = () => {
         <label>
           {emailFormText[language].bodyLabel}
           <textarea name="body" value={body} onChange={handleInputChange} />
+        </label>
+        <label>
+          {emailFormText[language].mathQuestion.replace('{num1}', num1.toString()).replace('{num2}', num2.toString())}
+          <input type="text" name="answer" value={answer} onChange={handleInputChange} />
         </label>
         <button type="submit">{emailFormText[language].submitButton}</button>
       </form>

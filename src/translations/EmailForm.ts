@@ -5,6 +5,7 @@ export const emailFormText = {
       subjectLabel: 'Subject:',
       bodyLabel: 'Body:',
       submitButton: 'Send',
+      mathQuestion: 'What is {num1} + {num2}?',
     },
     es: {
       heading: 'Formulario de Correo Electrónico',
@@ -12,6 +13,7 @@ export const emailFormText = {
       subjectLabel: 'Asunto:',
       bodyLabel: 'Mensaje:',
       submitButton: 'Enviar',
+      mathQuestion: '¿Cuánto es {num1} + {num2}?',
     },
   };
   
