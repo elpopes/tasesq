@@ -14,14 +14,14 @@ export const homeText = {
           subtitle: "We're here to help with your legal needs",
         },
       ],
-      welcomeTitle: 'Welcome to TASESQ',
-      welcomeDescription1: 'We are a San Antonio-based federal law firm with over 40 years of experience. Our seasoned team of legal professionals is dedicated to providing the highest quality legal services to our clients. We specialize in a broad range of federal legal matters and are committed to delivering results for our clients.',
+      welcomeTitle: 'Welcome to the Law Offices of Lorenzo Tijerina',
+      welcomeDescription1: 'We are a San Antonio/New York-based federal law firm with over 40 years of experience. Our legal professionals are dedicated to providing the highest quality legal services to our clients. We specialize in a broad range of federal legal matters and are committed to delivering results for our clients.',
       welcomeDescription2: 'Contact us today to learn more about how we can assist you with your legal needs.',
     },
     es: {
       slides: [
         {
-          title: "Bienvenidos a Nuestro Bufete de Abogados",
+          title: "Bienvenidos a Nuestro Bufete de Abogados, LLC",
           subtitle: "Proporcionando servicios legales de alta calidad durante más de 40 años",
         },
         {
