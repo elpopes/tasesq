@@ -1,7 +1,7 @@
 export const employmentLawText = {
     en: {
       heading: 'Employment Law Services',
-      introduction: "At TASESQ Law Firm, we provide comprehensive employment law services to protect the rights and interests of employees and employers. With a specialization in federal cases, we offer strategic legal representation tailored to the complexities of employment law at the federal level.",
+      introduction: "At the Law Offices of Lorenzo Tijerina, ESQ, we provide comprehensive employment law services to protect the rights and interests of employees and employers. Within federal and state cases, we offer strategic legal representation tailored to the complexities of employment law at the federal level.",
       servicesHeading: 'Our Services',
       servicesList: [
         'Discrimination and harassment claims',

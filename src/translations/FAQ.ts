@@ -7,7 +7,7 @@ export const faqText = {
           questions: [
             {
               q: 'What immigration services do you provide?',
-              a: 'We offer a wide range of immigration services, including visa applications, green card applications, citizenship applications, deportation defense, employment-based immigration, and family-based immigration. Our team specializes in federal immigration law matters.'
+              a: 'We offer a wide range of immigration services, including visa applications, green card applications, citizenship applications, deportation defense, employment-based immigration, and family-based immigration. Our team has over 30 years experience practicing immigration matters.'
             },
           ]
         },
@@ -25,7 +25,7 @@ export const faqText = {
           questions: [
             {
               q: 'What types of employment law cases do you handle?',
-              a: 'We handle a wide range of employment law cases, including discrimination claims, wrongful termination, wage and hour disputes, contract negotiations, and whistleblower protection. Our attorneys specialize in federal employment law matters.'
+              a: 'We handle a wide range of employment law cases, including discrimination claims, wrongful termination, wage and hour disputes, contract negotiations, and whistleblower protection. Our attorneys have over 30 years of experience in federal employment law matters.'
             },
           ]
         },
