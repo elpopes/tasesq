@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
+import Helmet from 'react-helmet';
 import HeroBanner from "./HeroBanner";
 import cityscape1 from '../assets/images/backgrounds/sunset.jpg';
 import cityscape2 from '../assets/images/backgrounds/cityscape.jpg';
@@ -39,6 +40,10 @@ const Home: React.FC = () => {
 
   return (
     <div className="home">
+      <Helmet>
+        <title>{homeText[language].pageTitle}</title>
+        <meta name="description" content={homeText[language].pageDescription} />
+      </Helmet>
       <div className="home__banner">
         {slides.map((slide, index) => (
           <HeroBanner 
