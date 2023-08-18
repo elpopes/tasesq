@@ -1,5 +1,6 @@
 import React from 'react';
 import Map from './Map';
+import NyMap from './NyMap';
 import EmailForm from './EmailForm';
 import ContactInfo from './ContactInfo';
 import { contactUsText } from '../translations/ContactUs';
@@ -24,6 +25,7 @@ const ContactUs: React.FC = () => {
         </div>
         <div className='map-wrapper'>
           <Map />
+          <NyMap />
         </div>
       </div>
     </div>

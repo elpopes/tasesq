@@ -1,9 +1,11 @@
 export const mapText = {
     en: {
-      locationTitle: 'Location Map',
+      saLocationTitle: 'San Antonio Location',
+      nyLocationTitle: 'Manhattan Location',
     },
     es: {
-      locationTitle: 'Mapa de ubicación',
+      saLocationTitle: 'Ubicación de San Antonio',
+      nyLocationTitle: 'Ubicación de Manhattan',
     },
-  };
+};
   
