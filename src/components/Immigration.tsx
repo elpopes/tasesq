@@ -12,6 +12,7 @@ const Immigration: React.FC = () => {
       <Helmet>
         <title>{t.title} | Law Offices of Lorenzo Tijerina</title>
         <meta name="description" content={`Specializing in ${t.title}. ${t.introduction}`} />
+        <meta name="keywords" content={`immigration law, ${t.servicesList.join(', ')}`} />
       </Helmet>
       <h2>{t.title}</h2>
       <p>{t.introduction}</p>

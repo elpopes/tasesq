@@ -41,9 +41,10 @@ const Home: React.FC = () => {
   return (
     <div className="home">
       <Helmet>
-        <title>{homeText[language].pageTitle}</title>
-        <meta name="description" content={homeText[language].pageDescription} />
-      </Helmet>
+    <title>{homeText[language].pageTitle} | Law Offices of Lorenzo Tijerina</title>
+    <meta name="description" content={homeText[language].pageDescription} />
+    <meta name="keywords" content="immigration law, tax law, employment law, wrongful termination, bilingual lawyer, experienced attorney, San Antonio, New York, labor law, ERISA matters, workplace discrimination, non-compete agreements, labor disputes, wage disputes" />
+</Helmet>
       <div className="home__banner">
         {slides.map((slide, index) => (
           <HeroBanner 
