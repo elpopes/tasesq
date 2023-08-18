@@ -1,6 +1,6 @@
-$font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-headings: 'Georgia', serif;
-$link-color: #5D4037; 
+$font-family-base: 'Quicksand', sans-serif;
+$font-family-headings: 'Alegreya', serif;
+$link-color: #5D4037;
 $link-hover-color: #607D8B;
 
 html, body {
@@ -11,7 +11,7 @@ html, body {
 
 body, button, input, select, textarea {
   font-family: $font-family-base;
-  font-size: 18px; 
+  font-size: 27px; // Increased by 50%
   line-height: 1.5;
   color: #333;
   background-color: rgb(250, 250, 250);
@@ -26,8 +26,7 @@ body, button, input, select, textarea {
     padding-left: 40px;
     padding-top: 40px;
     padding-bottom: 80px;
-  }
-
+}
 
 h1, h2, h3, h4, h5, h6 {
     padding-top: 20px;
@@ -37,33 +36,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
-h1 {
-  font-size: 2.5em; 
-  line-height: 2;
-}
-
-h2 {
-  font-size: 2.25em;
-  line-height: 2;
-}
-
-h3 {
-  font-size: 2em;
-  line-height: 1.3;
-}
-
-h4 {
-  font-size: 1.75em;
-}
-
-h5 {
-  font-size: 1.5em;
-}
-
-h6 {
-  font-size: 1.25em;
-}
-
+// Adjusting the heading sizes accordingly
+h1 { font-size: 2.5em; line-height: 2; }
+h2 { font-size: 2.25em; line-height: 2; }
+h3 { font-size: 2em; line-height: 1.3; }
+h4 { font-size: 1.75em; }
+h5 { font-size: 1.5em; }
+h6 { font-size: 1.25em; }
 
 a {
   color: $link-color;
