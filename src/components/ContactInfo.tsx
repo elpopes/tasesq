@@ -19,7 +19,7 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ className }) => {
                     {contactInfoText[language].address}
                 </a>
             </p>
-            <p> {/* New York Address */}
+            <p> 
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" /> 
                 <a href={contactInfoText[language].nyAddressLink} target="_blank" rel="noreferrer">
                     {contactInfoText[language].nyAddress}

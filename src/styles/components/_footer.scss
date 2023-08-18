@@ -1,5 +1,5 @@
 footer {
-    color: #ddd;  
+    color: #ddd;
     flex-shrink: 0;
   
     .footer-top {
@@ -15,49 +15,69 @@ footer {
         box-sizing: border-box;
   
         h2 {
-            font-family: 'Cardo', serif;
-            color: #f8f8f8;  
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            text-align: center;
+          font-family: 'Cardo', serif;
+          color: #f8f8f8;
+          font-size: 1.2em;
+          margin-bottom: 10px;
+          text-align: center;
         }
   
         p {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            color: #ddd;  
-            line-height: 1.5;
-            text-align: left;
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          color: #ddd;
+          line-height: 1.5;
+          text-align: left;
         }
-
+  
         .icon {
-            margin-right: 10px;
-          }
-
+          margin-right: 10px;
+        }
+  
         &.footer-contact-info {
-          display: flex;
-          flex-direction: column;
-  
-          .footer-contact-info-content {
             display: flex;
-            justify-content: flex-start;
-            color: #f8f8f8;
-            font-size: 1rem; 
-  
-            p {
-              display: flex;
-              align-items: center;
-  
-              .icon {
-                margin-right: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            .footer-contact-info-content {
+              display: flex; 
+              flex-direction: column;
+              align-items: flex-start; 
+              color: #f8f8f8;
+              font-size: 1rem;
+              margin-left: auto;
+              margin-right: auto;
+              width: 60%; 
+              padding-left: 10px; 
+        
+              p {
+                display: flex;
+                align-items: center;
+                margin: 10px 0;
+        
+                .icon {
+                  margin-right: 10px;
+                }
+        
+                a {
+                  display: block;
+                }
               }
             }
-          }
+            
+            h2 {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+            }
         }
+        
+          
+          
       }
-
+  
       @media (max-width: 768px) {
         flex-direction: column;
-
+  
         .footer-section {
           width: 100%;
         }
@@ -69,9 +89,9 @@ footer {
       padding: 10px 0;
       text-align: center;
     }
-
+  
     a {
-        color: #f8f8f8; 
+      color: #f8f8f8;
     }
 }
-
+  
