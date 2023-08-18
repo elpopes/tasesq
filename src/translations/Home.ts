@@ -3,7 +3,7 @@ export const homeText = {
       slides: [
         {
           title: "Welcome to Our Law Firm, LLC",
-          subtitle: "Providing top-quality legal services for over 40 years",
+          subtitle: "Providing top-quality legal services for over 30 years",
         },
         {
           title: "Experienced Legal Team",

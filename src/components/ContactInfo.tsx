@@ -19,6 +19,12 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ className }) => {
                     {contactInfoText[language].address}
                 </a>
             </p>
+            <p> {/* New York Address */}
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" /> 
+                <a href={contactInfoText[language].nyAddressLink} target="_blank" rel="noreferrer">
+                    {contactInfoText[language].nyAddress}
+                </a>
+            </p>
             <p>
                 <FontAwesomeIcon icon={faPhone} className="icon" /> 
                 <a href={contactInfoText[language].phoneLink}>
@@ -34,6 +40,7 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ className }) => {
         </div>
     );
 };
+
 
 export default ContactInfo;
 
