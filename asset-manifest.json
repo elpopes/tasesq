@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/tasesq/static/css/main.16710458.css",
-    "main.js": "/tasesq/static/js/main.7add1c20.js",
+    "main.css": "/tasesq/static/css/main.9ac6d28f.css",
+    "main.js": "/tasesq/static/js/main.4f6628ec.js",
     "static/js/787.8208f41f.chunk.js": "/tasesq/static/js/787.8208f41f.chunk.js",
     "static/media/sunset.jpg": "/tasesq/static/media/sunset.c917b7b6d9e9985ee4f3.jpg",
     "static/media/cityscape.jpg": "/tasesq/static/media/cityscape.d256f2d2d17a6baaba4e.jpg",
     "static/media/blindjustice.jpg": "/tasesq/static/media/blindjustice.eed37ee78153014a8437.jpg",
     "static/media/logo.svg": "/tasesq/static/media/logo.4038315b9215a7d30bbb51da0dfff053.svg",
     "index.html": "/tasesq/index.html",
-    "main.16710458.css.map": "/tasesq/static/css/main.16710458.css.map",
-    "main.7add1c20.js.map": "/tasesq/static/js/main.7add1c20.js.map",
+    "main.9ac6d28f.css.map": "/tasesq/static/css/main.9ac6d28f.css.map",
+    "main.4f6628ec.js.map": "/tasesq/static/js/main.4f6628ec.js.map",
     "787.8208f41f.chunk.js.map": "/tasesq/static/js/787.8208f41f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16710458.css",
-    "static/js/main.7add1c20.js"
+    "static/css/main.9ac6d28f.css",
+    "static/js/main.4f6628ec.js"
   ]
 }
