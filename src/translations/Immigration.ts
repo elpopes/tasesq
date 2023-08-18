@@ -8,12 +8,12 @@ export const immigrationText = {
       callToAction: 'Contact us today to schedule a consultation and learn how we can assist you with your immigration matters.',
     },
     es: {
-      title: 'Servicios de Inmigración',
-      introduction: 'En TASESQ Law Firm, nos especializamos en brindar servicios de inmigración integrales a personas y empresas. Nuestro equipo de abogados de inmigración con experiencia se dedica a ayudar a los clientes a navegar por el complejo proceso de inmigración con facilidad.',
-      servicesTitle: 'Nuestros Servicios',
-      servicesList: ['Solicitudes de visa', 'Solicitudes de tarjeta verde', 'Solicitudes de ciudadanía', 'Defensa contra la deportación', 'Inmigración basada en el empleo', 'Inmigración basada en la familia', 'Apelaciones de inmigración', 'Y más...'],
-      conclusion: 'Ya sea que sea una persona que busca reunirse con su familia o una empresa que busca contratar talento internacional, brindamos soluciones personalizadas adaptadas a sus necesidades de inmigración. Nuestro equipo se mantiene actualizado con las últimas leyes y regulaciones de inmigración para garantizar el mejor resultado posible para nuestros clientes.',
-      callToAction: 'Contáctenos hoy mismo para programar una consulta y descubrir cómo podemos ayudarlo con sus asuntos de inmigración.',
-    },
+        title: 'Servicios de Inmigración',
+        introduction: 'En las Oficinas Legales de Lorenzo Tijerina, ofrecemos servicios de inmigración integrales a individuos y empresas. Nuestro equipo de abogados de inmigración con experiencia se dedica a ayudar a los clientes a navegar por el complejo proceso de inmigración con facilidad.',
+        servicesTitle: 'Nuestros Servicios',
+        servicesList: ['Solicitudes de visa', 'Solicitudes de tarjeta verde', 'Solicitudes de ciudadanía', 'Procedimientos de deportación', 'Procedimientos de inmigración basados en el empleo', 'Procedimientos de inmigración basados en la familia (peticiones I-130)', 'Apelaciones de inmigración ante la Junta de Apelaciones de Inmigración y los Tribunales de EE.UU.', 'Y más...'],
+        conclusion: 'Ya sea que sea una persona que busca reunirse con su familia o una empresa que busca contratar talento internacional, ofrecemos soluciones personalizadas adaptadas a sus necesidades de inmigración únicas. Nuestro equipo se mantiene al día con las últimas leyes y regulaciones de inmigración para asegurar el mejor resultado posible para nuestros clientes.',
+        callToAction: 'Contáctenos hoy para programar una consulta y aprender cómo podemos asistirle con sus asuntos de inmigración.',
+      },
   };
   
