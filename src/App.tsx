@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <Router basename={process.env.NODE_ENV === 'production' ? '/tasesq' : '/'}>
+    <Router basename='/'>
       <div className="App">
         <Navbar />
         <Routes>    

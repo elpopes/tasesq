@@ -47,7 +47,7 @@ const EmailForm: React.FC = () => {
       }
   
     const message = {
-      to: 'tasesq@msn.com',
+      to: 'lorenzo@tijerinafedlaw.com',
       from: email,
       subject,
       text: body,

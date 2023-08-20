@@ -10,8 +10,8 @@ const AboutUs: React.FC = () => {
   return (
     <div className='container'>
       <Helmet>
-        <title>{t.heading} | TASESQ Law Firm</title>
-        <meta name="description" content="Learn about TASESQ Law Firm, Lorenzo Tijerina Esq, and our rich history on San Antonio's historic West Side." />
+        <title>{t.heading} | Tijerina Law Firm</title>
+        <meta name="description" content="Learn about Tijerina Law Firm, Lorenzo Tijerina Esq, and our rich history on San Antonio's historic West Side." />
         <meta name="keywords" content="Tijerina Law Firm, Lorenzo Tijerina, San Antonio Law, Federal Law, Legal Services, Law Firm History" />
       </Helmet>
       <h2>{t.heading}</h2>

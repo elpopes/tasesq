@@ -1,7 +1,7 @@
 export const aboutUsText = {
     en: {
       heading: "About Us",
-      introduction: "Welcome to TASESQ Law Firm, located on San Antonio's historic West Side. We are proud to serve our community with exceptional legal services.",
+      introduction: "Welcome to Tijerina Law Firm, located on San Antonio's historic West Side. We are proud to serve our community with exceptional legal services.",
       lorenzoHeading: "Lorenzo Tijerina Esq",
       lorenzoBio1: "Lorenzo Tijerina Esq is a highly experienced attorney with a passion for federal law. With over 30 years of practice, he has built an outstanding reputation for his dedication, expertise, and successful outcomes.",
       lorenzoBio2: "Lorenzo Tijerina Esq has a deep understanding of the complexities of federal law and uses his extensive knowledge to provide comprehensive legal representation to clients. His commitment to delivering personalized attention and fighting tirelessly for their rights has earned him the respect and trust of countless clients.",
@@ -12,7 +12,7 @@ export const aboutUsText = {
     },
     es: {
       heading: "Acerca de Nosotros",
-      introduction: "Bienvenido a TASESQ Law Firm, ubicado en el histórico West Side de San Antonio. Nos enorgullece servir a nuestra comunidad con servicios legales excepcionales.",
+      introduction: "Bienvenido a Tijerina Law Firm, ubicado en el histórico West Side de San Antonio. Nos enorgullece servir a nuestra comunidad con servicios legales excepcionales.",
       lorenzoHeading: "Lorenzo Tijerina Esq",
       lorenzoBio1: "Lorenzo Tijerina Esq es un abogado altamente experimentado con pasión por el derecho federal. Con más de 30 años de práctica, ha construido una destacada reputación por su dedicación, experiencia y resultados exitosos.",
       lorenzoBio2: "Lorenzo Tijerina Esq tiene un profundo conocimiento de las complejidades del derecho federal y utiliza su amplio conocimiento para brindar representación legal integral a sus clientes. Su compromiso de brindar atención personalizada y luchar incansablemente por sus derechos le ha valido el respeto y la confianza de innumerables clientes.",
