@@ -46,10 +46,11 @@ const EmailForm: React.FC = () => {
           return;
       }
   
+    const actualSubject = `From: ${email} - Subject: ${subject}`;  
     const message = {
       to: 'lorenzo@tijerinafedlaw.com',
-      from: email,
-      subject,
+      from: 'lorenzo@tijerinafedlaw.com',
+      subject : actualSubject,
       text: body,
       math: { num1, num2, answer },
     };
