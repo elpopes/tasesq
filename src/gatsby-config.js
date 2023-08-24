@@ -9,5 +9,14 @@ module.exports = {
         createLinkInHead: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-00C6NFXBXP",
+        head: false,
+        siteSpeedSampleRate: 10,
+        anonymize: true,
+      },
+    },
   ],
 };
