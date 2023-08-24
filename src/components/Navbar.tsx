@@ -18,12 +18,13 @@ const Navbar: React.FC = () => {
   };
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClick);
-
+    document.addEventListener("mousedown", handleClick, { passive: false });
+  
     return () => {
       document.removeEventListener("mousedown", handleClick);
     };
   }, []);
+  
 
   return (
     <>
