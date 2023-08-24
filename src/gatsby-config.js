@@ -5,7 +5,9 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-sitemap`,
-      options: {},
+      options: {
+        createLinkInHead: true,
+      },
     },
   ],
 };
