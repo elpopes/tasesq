@@ -39,8 +39,16 @@
     }
 
     p {
+        font-size: 24px;
+        font-weight: bold;
         animation-name: slideInDownP;
         animation-delay: 0.5s; 
+    }
+}
+
+@media (max-width: 1168px) {
+    .home__banner {
+        display: none;
     }
 }
 
