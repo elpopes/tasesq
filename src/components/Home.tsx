@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
+import homeJsonLd from '../data/homeJsonLd';
 import Helmet from 'react-helmet';
 import HeroBanner from "./HeroBanner";
 import cityscape1 from '../assets/images/backgrounds/sunset.jpg';
@@ -41,10 +42,11 @@ const Home: React.FC = () => {
   return (
     <div className="home">
       <Helmet>
-    <title>{homeText[language].pageTitle} | Law Offices of Lorenzo Tijerina</title>
-    <meta name="description" content={homeText[language].pageDescription} />
-    <meta name="keywords" content="immigration law, tax law, employment law, wrongful termination, bilingual lawyer, experienced attorney, San Antonio, New York, labor law, ERISA matters, workplace discrimination, non-compete agreements, labor disputes, wage disputes" />
-</Helmet>
+      <script type="application/ld+json">{JSON.stringify(homeJsonLd)}</script>
+        <title>{homeText[language].pageTitle} | Law Offices of Lorenzo Tijerina</title>
+        <meta name="description" content={homeText[language].pageDescription} />
+        <meta name="keywords" content="immigration law, tax law, employment law, wrongful termination, bilingual lawyer, experienced attorney, San Antonio, New York, labor law, ERISA matters, workplace discrimination, non-compete agreements, labor disputes, wage disputes" />
+      </Helmet>
       <div className="home__banner">
         {slides.map((slide, index) => (
           <HeroBanner 
