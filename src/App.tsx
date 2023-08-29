@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -11,6 +12,11 @@ import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
+  useEffect(() => {
+    ReactGA.initialize('G-00C6NFXBXP');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <Router basename='/'>
       <div className="App">
