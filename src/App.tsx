@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Immigration from './components/Immigration';
@@ -12,10 +12,15 @@ import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
+  const location = useLocation();
+
   useEffect(() => {
     ReactGA.initialize('G-00C6NFXBXP');
-    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
+
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
 
   return (
     <Router basename='/'>
