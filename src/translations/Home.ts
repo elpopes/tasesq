@@ -3,7 +3,7 @@ export const homeText = {
       slides: [
         {
           title: "Welcome to The Law Offices of Lorenzo W. Tijerina",
-          subtitle: "Providing top-quality legal services in federal law, including tax, immigration, and employment for over 30 years",
+          subtitle: "Providing top-quality legal services in federal law, including tax, immigration, and employment for over 35 years",
         },
         {
           title: "Experienced Legal Team",
