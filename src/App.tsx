@@ -38,6 +38,7 @@ const AppRoutes: React.FC = () => {
 const App: React.FC = () => {
   useEffect(() => {
     ReactGA.initialize('G-00C6NFXBXP');
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
   return (
