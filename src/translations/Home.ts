@@ -11,7 +11,7 @@ export const homeText = {
         },
         {
           title: "Contact Us Today",
-          subtitle: "We're here to help with your legal needs",
+          subtitle: "We are here to help with your legal needs",
         },
       ],
       welcomeTitle: 'Welcome to the Law Offices of Lorenzo W. Tijerina, ESQ',
